@@ -1,0 +1,14 @@
+name = "my-worker"
+type = "javascript"
+
+# Your Cloudflare account details (replace with your own)
+account_id = "your_account_id"
+workers_dev = true
+
+# Optionally, specify a route and zone_id if deploying to production
+# route = "https://yourdomain.com/*"
+# zone_id = "your_zone_id"
+
+[site]
+bucket = "./public"
+entry-point = "workers-site"
